@@ -120,7 +120,7 @@ a {
 /* Hero */
 .hero {
     background-color: #fffcf4;
-    padding: 56px 0 64px;
+    padding: 56px 0 65px;
 }
 
 .hero-wrap {
@@ -138,6 +138,7 @@ a {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .hero-info {
@@ -148,7 +149,7 @@ a {
     padding: 24px;
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 48px;
 }
 
 .hero-info-item {
