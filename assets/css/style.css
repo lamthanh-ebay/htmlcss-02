@@ -440,3 +440,81 @@ a {
 .popular-item-buy-now:hover {
     background-color: var(--primary-color);
 }
+
+/* Feedback */
+.feedback {
+    background-color: #2e2100;
+}
+
+.feedback-wrap {
+    padding: 96px 0;
+}
+
+.feedback-item {
+    display: flex;
+}
+
+.feedback-info {
+}
+
+.feedback-avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-user-name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+}
+
+.feedback-desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.feedback-dots {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.feedback-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.feedback-dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+.quote {
+    width: 66%;
+    margin-left: auto;
+}
+
+.quote-icon {
+    width: 30px;
+    height: 28px;
+}
+
+.quote blockquote {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 4rem;
+    margin-left: 30px;
+}
