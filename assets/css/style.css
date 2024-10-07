@@ -66,6 +66,9 @@ a {
     margin-top: 22px;
 }
 
+.break-all {
+    word-break: break-all;
+}
 /* Header */
 .header {
     background-color: #fffcf4;
@@ -398,6 +401,7 @@ a {
     width: 18px;
     height: 18px;
     transform: translateY(-2px);
+    margin-left: 6px;
 }
 
 .popular-item-rating .value {
