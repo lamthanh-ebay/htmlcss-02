@@ -448,10 +448,14 @@ a {
 
 .feedback-wrap {
     padding: 96px 0;
+    display: flex;
+    overflow: hidden;
 }
 
 .feedback-item {
     display: flex;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .feedback-info {
