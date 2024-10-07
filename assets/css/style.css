@@ -524,6 +524,7 @@ a {
 }
 
 /* Features */
+/* Features 01 */
 .features {
 }
 
@@ -545,7 +546,7 @@ a {
     border-radius: 16px;
 }
 
-.features-image:first-child {
+.features-image.lower {
     margin-top: 34px;
 }
 
@@ -578,4 +579,19 @@ a {
     background: var(--primary-color);
     color: #fff;
     margin-top: 32px;
+}
+
+/* Features 02 */
+.features-wrap-02 {
+    flex-direction: row-reverse;
+    padding: 0 0 200px;
+}
+
+.features-wrap-02 .features-content {
+    width: 49%;
+}
+
+.features-wrap-02 .features-image {
+    width: 470px;
+    height: 440px;
 }
