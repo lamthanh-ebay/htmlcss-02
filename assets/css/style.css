@@ -595,3 +595,136 @@ a {
     width: 470px;
     height: 440px;
 }
+
+/* Blog */
+.blog {
+    background: #fffcf4;
+}
+
+.blog-wrap {
+    padding: 96px 0;
+}
+
+.blog-top {
+    text-align: center;
+}
+
+.blog-heading {
+    color: #130606;
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.076rem;
+}
+
+.blog-desc {
+    margin: 16px auto 0;
+    width: 448px;
+    color: #696262;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.blog-list {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: clip;
+    overflow-clip-margin: 28px;
+}
+
+.blog-item {
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
+    border-radius: 16px;
+    background-color: #fff;
+    transition: all ease 0.15s;
+}
+
+.blog-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.08);
+}
+
+.blog-item-thumb {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog-item-info {
+    padding: 20px 20px 28px;
+}
+
+.blog-item-date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.blog-item-date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.blog-item-date::after {
+    content: "";
+    display: inline-block;
+    width: calc(100% + 37px);
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+}
+
+.blog-item-title a {
+    margin-top: 25px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.blog-item-btn {
+    margin-top: 12px;
+    background: #171100;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.blog-item-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.blog .dots {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5f5b53;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
