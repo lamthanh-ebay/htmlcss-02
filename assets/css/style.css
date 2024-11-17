@@ -352,7 +352,7 @@ a {
     border-radius: 12px;
     background-color: #fff;
     border: 1px solid #f0f0f0;
-    transition: all linear 0.15s;
+    transition: box-shadow ease-in-out 0.5s, transform ease-in-out 0.5s;
 }
 
 .popular-item:hover {
@@ -435,6 +435,7 @@ a {
     font-weight: 600;
     border: none;
     background-color: #171100;
+    transition: background-color ease-in-out 0.15s;
 }
 
 .popular-item-buy-now:hover {
@@ -702,6 +703,7 @@ a {
     background: #171100;
     font-size: 1.4rem;
     color: #fff;
+    transition: background-color ease-in-out 0.15s;
 }
 
 .blog-item-btn:hover {
