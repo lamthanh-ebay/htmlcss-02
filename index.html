@@ -19,6 +19,9 @@
         <!--  Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
 
+        <!-- Responsive => Để bên dưới cho ưu tiên hơn -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+
         <!-- Animation -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
@@ -27,6 +30,16 @@
         <header class="header">
             <div class="content">
                 <div class="head-body">
+                    <!-- Mobile Menu icon -->
+                    <label for="mobile-menu__checkbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="mobile-menu-icon">
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Logo -->
                     <a href="#!">
                         <img src="./assets/img/logo.svg" alt="Lession." class="logo" />
@@ -34,7 +47,8 @@
 
                     <!-- Navbar -->
                     <nav class="nav-bar">
-                        <ul>
+                        <!-- PC nav bar -->
+                        <ul id="pcNav">
                             <li class="active">
                                 <a href="#!">Home</a>
                             </li>
@@ -55,9 +69,57 @@
                         <a href="#!" class="btn">Sign Up</a>
                     </div>
                 </div>
+
+                <!-- MOBILE menu -->
+                <div class="header-mobile">
+                    <!-- Mobile menu Checkbox -->
+                    <input
+                        type="checkbox"
+                        name="mobile-menu__checkbox"
+                        id="mobile-menu__checkbox"
+                        class="mobile-menu__checkbox"
+                        hidden
+                    />
+
+                    <!-- Overlay -->
+                    <label for="mobile-menu__checkbox" class="mobile-menu__overlay"></label>
+
+                    <!-- Mobile menu body -->
+                    <div class="mobile-menu__body">
+                        <!-- Logo -->
+                        <a href="#!">
+                            <img src="./assets/img/logo.svg" alt="Lession." class="mobile-menu__logo" />
+                        </a>
+
+                        <!-- Navbar -->
+                        <nav class="mobile-menu__nav-bar">
+                            <!-- Mobile nav bar -->
+                            <ul id="mobileNav">
+                                <li class="separation">
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Reviews</a>
+                                </li>
+                                <li class="show-on-mobile separation">
+                                    <a href="#!">Sign In</a>
+                                </li>
+                                <li class="show-on-mobile">
+                                    <a href="#!">Sign Up</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </header>
-        <main>
+        <main style="display: none">
             <!-- Hero -->
             <div class="hero">
                 <div class="content">
@@ -637,7 +699,7 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" style="display: none">
             <div class="content">
                 <div class="footer-wrap">
                     <div class="row">
